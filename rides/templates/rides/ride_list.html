@@ -1,0 +1,15 @@
+{% extends 'rides/base.html' %}
+
+{% block content %}
+
+    <h1>My Rides</h1>
+
+    <a href="{% url 'rides:ride_create' %}">Book Ride</a>
+
+    <ul>
+        {% for ride in objects %}
+            <li>{{ ride.ride_date }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}

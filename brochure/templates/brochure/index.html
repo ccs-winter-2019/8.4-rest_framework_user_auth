@@ -1,0 +1,9 @@
+{% extends 'brochure/base.html' %}
+
+{% block content %}
+    <h1>Welcome to Huber!</h1>
+
+    <h2>We're Uber for Horse Rides</h2>
+
+    <a href="{% url 'users:signup' %}">Signup</a> | <a href="{% url 'users:login' %}">Login</a>
+{% endblock content %}
